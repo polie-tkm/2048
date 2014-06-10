@@ -2,13 +2,16 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  background: #000000 ;
+  color: #FFF;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px; }
+  font-size: 18px;}
 
 body {
-  margin: 80px 0; }
+  margin: 0px 0; 
+  background: url('../img/fundo.png') no-repeat;
+  padding-bottom: 10px;
+  padding-top: 10px}
 
 .heading:after {
   content: "";
@@ -53,7 +56,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: rgba(0, 0, 0, 0.4);
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -72,7 +75,7 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: #FFF; }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -101,13 +104,14 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #960000;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
 
 strong.important {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #960000; }
 
 hr {
   border: none;
@@ -149,7 +153,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -163,7 +167,7 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(238, 228, 218, 0.5);
+    background: rgba(185, 185, 185, 0.5);
     z-index: 100;
     text-align: center;
     -webkit-animation: fade-in 800ms ease 1200ms;
@@ -183,7 +187,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #000000;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -311,28 +315,30 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 55px; }
+    font-size: 55px;
+    text-indent: -1000px;
+    overflow: hidden; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    background: url('../img/ciel-2.png');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    background: url('../img/alois-4.png');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: #f2b179; }
+    background: url('../img/grell-8.png'); }
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: #f59563; }
+    background: url('../img/claude-16.png'); }
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: #f67c5f; }
+    background: url('../img/sebby-32.png'); }
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background: #f65e3b; }
+    background: url('../img/undertaker-64.png'); }
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
-    background: #edcf72;
+    background: url('../img/ladyciel-128.png');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -340,7 +346,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
-    background: #edcc61;
+    background: url('../img/madamered-256.png');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -484,23 +490,31 @@ hr {
 .game-intro {
   float: left;
   line-height: 42px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  color: #FFF;
+  font-size: 22px; }
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: rgba(5, 2, 0, 0.41);
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
+  color: #FFF;
   height: 40px;
   line-height: 42px;
   display: block;
   text-align: center;
   float: right; }
 
+  p.footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  padding: 5px 6.4px;
+  }
+
 .game-explanation {
-  margin-top: 50px; }
+  margin-top: 24px; }
 
 @media screen and (max-width: 520px) {
   html, body {
